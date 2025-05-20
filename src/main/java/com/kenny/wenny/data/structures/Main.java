@@ -1,11 +1,43 @@
 package com.kenny.wenny.data.structures;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
+        int num1 = 10;
+        int num2 = 5;
+        String operation = "+";
+        int result;
+        switch (operation) {
+            case "+":
+                result = add(num1, num2);
+                break;
+            case "-":
+                result = subtract(num1, num2);
+                break;
+            case "*":
+                result = multiply(num1, num2);
+                break;
+            default:
+                System.out.println("Invalid operation!");
+                return;
+        }
+        System.out.println("Result: " + result);
+    }
+
+    private static int subtract(int num1, int num2) {
+        return num1 - num2;
+    }
+
+    private static int add(int num1, int num2) {
+        return num1 + num2;
+    }
+
+    private static int multiply(int num1, int num2) {
+        return num1 * num2;
+    }
+
+    public static void conditions(String[] args) {
         for (var i = 0; i < 100; i++) {
             if (i % 2 == 0) {
                 System.out.println(i + " is even");
