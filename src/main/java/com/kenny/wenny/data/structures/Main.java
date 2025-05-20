@@ -16,8 +16,9 @@ A Hashmap of animal types & their names
         String[] someStrings = { "Violeta", "Jessie", "Rads", "Nade", "Ekta", "Paula" };
         System.out.println(someStrings[4]);
         // Type inference in Java
-        var animalMap = new HashMap<>();
-        animalMap.put("dog", "mary");
-        animalMap.put("cat", "kate");
+        var animalMap = Map.of(
+                "dog", "mary",
+                "cat", "kate"
+        );
     }
 }
