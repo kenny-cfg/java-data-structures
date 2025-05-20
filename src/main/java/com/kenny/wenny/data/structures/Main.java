@@ -5,9 +5,15 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-
+        for (var i = 0; i < 100; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i + " is even");
+            } else {
+                System.out.println(i + " is odd");
+            }
+        }
     }
-    
+
     public static void loops(String[] args) {
         var counter = 1;
         while (counter < 1000) {
