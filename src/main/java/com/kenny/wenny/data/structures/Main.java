@@ -2,6 +2,7 @@ package com.kenny.wenny.data.structures;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +12,16 @@ public class Main {
             } else {
                 System.out.println(i + " is odd");
             }
+        }
+        System.out.println("Exercise 5");
+        for (var i = 0; i < 100; i++) {
+            var random = new Random();
+            // Generate a random integer between min (inclusive) and max (exclusive)
+            var min = 1;
+            var max = 10;
+            var randomInt = random.nextInt(max - min) + min;
+            var evenOrOdd = randomInt % 2 == 0 ? "even" : "odd";
+            System.out.println(randomInt + " is " + evenOrOdd);
         }
     }
 
