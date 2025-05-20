@@ -23,6 +23,25 @@ public class Main {
             var evenOrOdd = randomInt % 2 == 0 ? "even" : "odd";
             System.out.println(randomInt + " is " + evenOrOdd);
         }
+        System.out.println("Switch example");
+
+        for (var i = 0; i < 10; i++) {
+            var random = new Random();
+            // Generate a random integer between min (inclusive) and max (exclusive)
+            var min = 20;
+            var max = 50;
+            var randomInt = random.nextInt(max - min) + min;
+            switch (randomInt) {
+                case 20:
+                    System.out.println("It's twenty");
+                    break;
+                case 30:
+                    System.out.println("It's thirty");
+                    break;
+                default:
+                    System.out.println(randomInt + " is neither twenty or thirty");
+            }
+        }
     }
 
     public static void loops(String[] args) {
