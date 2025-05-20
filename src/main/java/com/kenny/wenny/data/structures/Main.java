@@ -8,6 +8,18 @@ public class Main {
         for (var i = 0; i < 10; i++) {
             System.out.println("Hello for time number " + i);
         }
+        // Exercise 1
+        /*
+        Print the numbers 20-30 (20,21,...,30)
+        Print the numbers 10-0 (10,9,8,7,6,5,4,3,2,1)
+         */
+        System.out.println("***Exercise 1***");
+        for (var i = 20; i <= 30; i++) {
+            System.out.println(i);
+        }
+        for (var i = 10; i > 0; i--) {
+            System.out.println(i);
+        }
     }
     /*
     Starter exercise
