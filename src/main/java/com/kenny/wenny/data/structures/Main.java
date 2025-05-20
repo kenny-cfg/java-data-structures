@@ -5,6 +5,10 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
+
+    }
+    
+    public static void loops(String[] args) {
         var counter = 1;
         while (counter < 1000) {
             System.out.println("Counter is " + counter);
