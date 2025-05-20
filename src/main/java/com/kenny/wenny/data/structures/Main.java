@@ -20,6 +20,12 @@ public class Main {
         for (var i = 10; i > 0; i--) {
             System.out.println(i);
         }
+        // For each example
+        System.out.println("*** For each example ***");
+        String[] tvShows = {"Star Trek", "Doctor Who", "Top of the Pops"};
+        for (var tvShow : tvShows) {
+            System.out.println(tvShow);
+        }
     }
     /*
     Starter exercise
