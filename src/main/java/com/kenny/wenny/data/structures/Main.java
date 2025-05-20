@@ -5,9 +5,20 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-
+        var counter = 1;
+        while (counter < 1000) {
+            System.out.println("Counter is " + counter);
+            counter = counter * 2;
+        }
+        System.out.println("Finished!");
+        // Infinite loop: please don't run
+        /*
+        while (true) {
+            System.out.println("Hello");
+        }
+         */
     }
-    
+
     public static void exercisesUpTo2(String[] args) {
         for (var i = 0; i < 10; i++) {
             System.out.println("Hello for time number " + i);
