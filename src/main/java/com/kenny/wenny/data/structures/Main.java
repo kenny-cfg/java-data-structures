@@ -26,6 +26,16 @@ public class Main {
         for (var tvShow : tvShows) {
             System.out.println(tvShow);
         }
+        // Exercise 2
+        /*
+        Make an array of integers (any numbers, small, e.g. 5 elements)
+        Using a for each loop, print out the value of the number squared
+         */
+        System.out.println("*** Exercise 2 ***");
+        int[] ages = {20, 21, 22, 23, 24, 25, 26};
+        for (var age : ages) {
+            System.out.println("The square of " + age + " is " + age * age);
+        }
     }
     /*
     Starter exercise
