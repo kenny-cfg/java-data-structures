@@ -4,6 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
+    public static void main(String[] args) {
+        for (var i = 0; i < 10; i++) {
+            System.out.println("Hello for time number " + i);
+        }
+    }
     /*
     Starter exercise
     public static void main(String[] args) {
